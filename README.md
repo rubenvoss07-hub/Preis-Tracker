@@ -57,10 +57,15 @@ node scripts/generate-sample-data.mjs
 
 Sobald echte Preise eingetragen sind, wird `"sample"` auf `false` gesetzt und der Hinweis verschwindet.
 
-## Wöchentliches Update
+## Wöchentliches Update (automatisch)
 
-Die Preise pflegt später eine wiederkehrende Aufgabe (z. B. Claude Code on the web).
-Wie das Datenformat aussieht und wie man eine neue Woche anlegt, steht in **[ANLEITUNG.md](ANLEITUNG.md)**.
+Ein GitHub-Action-Job (`.github/workflows/weekly-price-update.yml`) aktualisiert die
+Preise **einmal pro Woche automatisch**: er recherchiert per Claude die aktuellen
+Preise je Produkt × Markt, schreibt sie in `data/prices.json` und committet auf `main`.
+
+Dafür ist einmalig ein Repository-Secret **`ANTHROPIC_API_KEY`** nötig
+(Settings → Secrets and variables → Actions). Ohne das Secret überspringt der Job
+sich selbst, ohne Fehler. Details und das Datenformat: **[ANLEITUNG.md](ANLEITUNG.md)**.
 
 ## GitHub Pages aktivieren
 

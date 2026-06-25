@@ -1,0 +1,75 @@
+name: Weekly price update
+
+# The "automated cloud environment job" that refreshes the prices once a week.
+# It runs Claude headless to research the current prices for every product ×
+# market, writes them into data/prices.json (a new dated snapshot), commits to
+# main and lets the Pages deploy workflow publish the update.
+#
+# ── One-time setup ────────────────────────────────────────────────────────────
+# Add a repository secret named ANTHROPIC_API_KEY (Settings → Secrets and
+# variables → Actions → New repository secret). Get a key at console.anthropic.com.
+# Until that secret exists this workflow just no-ops (it won't fail the repo).
+#
+# Trigger it by hand anytime via Actions → "Weekly price update" → Run workflow.
+
+on:
+  schedule:
+    - cron: "23 5 * * 1" # every Monday ~05:23 UTC (≈ 07:23 Münster)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-price-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check for API key
+        id: key
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "$KEY" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::ANTHROPIC_API_KEY secret is not set — skipping the price research. Add it to enable weekly updates."
+          fi
+
+      - name: Scaffold this week's snapshot
+        if: steps.key.outputs.present == 'true'
+        run: node scripts/add-week.mjs --real
+
+      - name: Research prices with Claude
+        if: steps.key.outputs.present == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "Follow the instructions in .github/price-update-prompt.md exactly. Only edit data/prices.json. Do not run any git commands and do not open a pull request — a later workflow step handles committing."
+          claude_args: '--max-turns 120 --allowedTools "Bash,Read,Edit,Write,WebSearch,WebFetch,Glob,Grep"'
+
+      - name: Validate and commit
+        if: steps.key.outputs.present == 'true'
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('data/prices.json','utf8'))" || { echo "prices.json is not valid JSON — aborting"; exit 1; }
+          git config user.name "preis-tracker-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/prices.json; then
+            echo "No price changes to commit."
+          else
+            git add data/prices.json
+            git commit -m "Weekly price update ($(date -u +%F))"
+            git push origin HEAD:main
+          fi
