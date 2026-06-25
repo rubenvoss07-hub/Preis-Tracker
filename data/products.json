@@ -1,0 +1,34 @@
+[
+  { "id": "frosta",            "name": "Frosta",                          "subtitle": "Tiefkühlgericht",            "category": "Tiefkühl",       "unit": "Packung",   "emoji": "🍤" },
+  { "id": "pizza-oetker",      "name": "Dr. Oetker Ofenfrische",          "subtitle": "Tiefkühlpizza",              "category": "Tiefkühl",       "unit": "Stück",     "emoji": "🍕" },
+  { "id": "mccain-longs",      "name": "McCain Golden Longs",             "subtitle": "Pommes",                     "category": "Tiefkühl",       "unit": "Packung",   "emoji": "🍟" },
+  { "id": "iglo-nuggets",      "name": "Iglo Chicken Nuggets",           "subtitle": "Hähnchen",                   "category": "Tiefkühl",       "unit": "Packung",   "emoji": "🍗" },
+  { "id": "lachs-blaetter",    "name": "Lachs in Blätterteig",           "subtitle": "Tiefkühl",                   "category": "Tiefkühl",       "unit": "Stück",     "emoji": "🐟" },
+  { "id": "magnum",            "name": "Magnum",                          "subtitle": "Eis",                        "category": "Tiefkühl",       "unit": "Packung",   "emoji": "🍦" },
+
+  { "id": "jever-fun",         "name": "Jever Fun",                       "subtitle": "Alkoholfrei",                "category": "Getränke",       "unit": "6 × 0,33 l","emoji": "🍺" },
+  { "id": "jever-blutorange",  "name": "Jever Fun Blutorange",           "subtitle": "Alkoholfrei",                "category": "Getränke",       "unit": "6 × 0,33 l","emoji": "🍊" },
+  { "id": "salvus-zitrone",    "name": "Salvus Zitrone",                  "subtitle": "Mineralwasser",              "category": "Getränke",       "unit": "Kasten",    "emoji": "🍋" },
+  { "id": "salvus-lemon",      "name": "Salvus Lemon",                    "subtitle": "Mineralwasser",              "category": "Getränke",       "unit": "Kasten",    "emoji": "🫧" },
+  { "id": "coca-cola",         "name": "Coca-Cola",                       "subtitle": "1,25 l",                     "category": "Getränke",       "unit": "Flasche",   "emoji": "🥤" },
+  { "id": "fanta-sprite",      "name": "Fanta / Sprite",                  "subtitle": "1,25 l",                     "category": "Getränke",       "unit": "Flasche",   "emoji": "🧃" },
+  { "id": "elephant-bay",      "name": "Elephant Bay",                    "subtitle": "Eistee",                     "category": "Getränke",       "unit": "1 l",       "emoji": "🧊" },
+  { "id": "monster-doctor",    "name": "Monster The Doctor",             "subtitle": "Energy",                     "category": "Getränke",       "unit": "0,5 l",     "emoji": "⚡" },
+
+  { "id": "sylter-caesars",    "name": "Sylter Salatfrische Caesars",    "subtitle": "Dressing",                   "category": "Kühlregal",      "unit": "Flasche",   "emoji": "🥗" },
+  { "id": "damhus-wuerstchen", "name": "Damhus Würstchen",               "subtitle": "Würstchen",                  "category": "Kühlregal",      "unit": "Glas",      "emoji": "🌭" },
+  { "id": "weihen-kochsahne",  "name": "Weihenstephan Kochsahne",        "subtitle": "Sahne",                      "category": "Kühlregal",      "unit": "200 g",     "emoji": "🥛" },
+  { "id": "weihen-fruchtquark","name": "Weihenstephan Fruchtquark",      "subtitle": "Quark",                      "category": "Kühlregal",      "unit": "500 g",     "emoji": "🍓" },
+
+  { "id": "lavazza-cremoso",   "name": "Lavazza Espresso Cremoso",       "subtitle": "Barista, Bohnen",            "category": "Vorrat",         "unit": "1 kg",      "emoji": "☕" },
+  { "id": "barilla-nudeln",    "name": "Barilla Nudeln",                 "subtitle": "Pasta",                      "category": "Vorrat",         "unit": "500 g",     "emoji": "🍝" },
+  { "id": "nutella",           "name": "Nutella",                         "subtitle": "Nuss-Nougat-Creme",          "category": "Vorrat",         "unit": "450 g",     "emoji": "🍫" },
+
+  { "id": "avocado",           "name": "Avocado",                         "subtitle": "Stück",                      "category": "Obst & Gemüse",  "unit": "Stück",     "emoji": "🥑" },
+
+  { "id": "develey",           "name": "Develey",                         "subtitle": "Senf / Ketchup",             "category": "Saucen",         "unit": "Flasche",   "emoji": "🫙" },
+  { "id": "remia",             "name": "Remia",                           "subtitle": "Dressing",                   "category": "Saucen",         "unit": "Flasche",   "emoji": "🥫" },
+  { "id": "lukull-hollandaise","name": "Lukull Hollandaise",             "subtitle": "Sauce",                      "category": "Saucen",         "unit": "Beutel",    "emoji": "🍳" },
+
+  { "id": "maredo-rind",       "name": "Maredo Rindfleisch",             "subtitle": "Steak",                      "category": "Fleisch",        "unit": "Packung",   "emoji": "🥩" }
+]
