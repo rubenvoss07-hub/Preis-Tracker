@@ -1,0 +1,7 @@
+[
+  { "id": "rewe-metzer",   "name": "Rewe",       "branch": "Metzer Straße",            "color": "#cc071e" },
+  { "id": "lidl",          "name": "Lidl",       "branch": "Münster",                  "color": "#0050aa" },
+  { "id": "ecenter-ebert", "name": "E-Center",   "branch": "Friedrich-Ebert-Straße",   "color": "#e3000f" },
+  { "id": "aldi-nord",     "name": "Aldi Nord",  "branch": "Münster",                  "color": "#001e78" },
+  { "id": "sb-markt",      "name": "SB Markt",   "branch": "Münster",                  "color": "#3f8f3a" }
+]

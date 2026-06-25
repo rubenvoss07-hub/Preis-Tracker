@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preis-Tracker Münster</title>
+  <meta name="description" content="Wöchentlicher Preisvergleich für Lebensmittel in Supermärkten in Münster." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">🛒</span>
+        <div>
+          <h1>Preis-Tracker <span>Münster</span></h1>
+          <p class="tagline">Wöchentlicher Lebensmittel-Preisvergleich</p>
+        </div>
+      </div>
+      <div class="updated" id="updatedChip" hidden>
+        <span class="dot" aria-hidden="true"></span>
+        <span id="updatedText"></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div id="sampleBanner" class="banner" hidden>
+      <strong>Beispieldaten.</strong> Diese Preise sind Platzhalter, damit die Seite zum Leben erwacht.
+      Sobald der erste echte Scan läuft, werden sie ersetzt.
+    </div>
+
+    <!-- Basket / market ranking summary -->
+    <section id="basketSection" class="basket" aria-label="Marktvergleich">
+      <div class="section-head">
+        <h2>Welcher Markt ist am günstigsten?</h2>
+        <p class="muted">Gesamtkosten aller verfügbaren Produkte je Markt.</p>
+      </div>
+      <div id="basketGrid" class="basket-grid"></div>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls" aria-label="Filter und Suche">
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon"><path d="M21 21l-4.3-4.3M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="searchInput" placeholder="Produkt suchen …" autocomplete="off" />
+      </div>
+      <div class="control-row">
+        <div id="categoryChips" class="chips" role="tablist" aria-label="Kategorien"></div>
+        <div class="right-controls">
+          <label class="select">
+            <span>Sortieren</span>
+            <select id="sortSelect">
+              <option value="name">Name (A–Z)</option>
+              <option value="cheapest">Günstigster Preis</option>
+              <option value="savings">Größte Ersparnis</option>
+            </select>
+          </label>
+          <div class="view-toggle" role="group" aria-label="Ansicht">
+            <button id="viewCards" class="active" aria-pressed="true" title="Kartenansicht">▦</button>
+            <button id="viewTable" aria-pressed="false" title="Tabellenansicht">▤</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="content">
+      <div id="cardView" class="card-grid"></div>
+      <div id="tableView" class="table-wrap" hidden></div>
+      <p id="emptyState" class="empty" hidden>Keine Produkte gefunden.</p>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        Preise für <strong>Münster</strong> · wöchentlich aktualisiert · Daten ohne Gewähr.
+      </p>
+      <p class="muted small">
+        Produkte und Märkte lassen sich in <code>data/products.json</code> und
+        <code>data/markets.json</code> erweitern. Quellcode auf GitHub.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
