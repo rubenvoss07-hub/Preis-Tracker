@@ -107,12 +107,17 @@ Der fertige Prompt liegt in **[ROUTINE-PROMPT.md](ROUTINE-PROMPT.md)**.
 5. **Environment / Network access:** auf **Full** stellen (oder **Custom** mit den
    Domains der Ketten und Preisportale). Die Standard-Einstellung „Trusted" **blockt**
    die Supermarkt-Seiten – dann findet die Routine keine Preise.
-6. **Permissions:** **„Allow unrestricted branch pushes"** für dieses Repo aktivieren,
-   damit die Routine direkt auf `main` pushen darf. (Ohne das pusht sie auf einen
-   `claude/…`-Branch – dann nutze die „Safer variant" am Ende von ROUTINE-PROMPT.md
-   und merge wöchentlich selbst.)
-7. **Trigger:** **Schedule → Weekly** wählen, Tag/Uhrzeit nach Wunsch.
-8. **Create.** Mit **Run now** lässt sich der erste Lauf sofort testen.
+6. **Connectors:** alle entfernen – die Routine braucht keine. (Lässt man fremde
+   Connectors drin, kann das Anlegen fehlschlagen.)
+7. **Permissions:** **„Uneingeschränkten Git-Push erlauben" NICHT aktivieren.** Mit dieser
+   Standard-Einstellung pusht die Routine auf einen `claude/…`-Branch und öffnet einen
+   Pull Request – genau das macht der Prompt. Den PR mergst du einmal pro Woche mit einem
+   Klick, dann aktualisiert sich die Seite.
+   *(Hinweis: Das Aktivieren des Schalters schlägt fehl, solange die Claude-GitHub-App keine
+   Schreibrechte aufs Repo hat. Nur nötig, wenn du den direkten `main`-Push willst – siehe
+   „Direct-to-main variant" in ROUTINE-PROMPT.md.)*
+8. **Trigger:** **Schedule → Weekly** wählen, Tag/Uhrzeit nach Wunsch.
+9. **Create.** Mit **Run now** lässt sich der erste Lauf sofort testen.
 
 > Sicherheit: Wähle nur dieses eine Repo aus und entferne nicht benötigte Connectors.
 > Die Routine läuft autonom mit Schreibrechten und Web-Zugriff – gib ihr nur, was sie braucht.
