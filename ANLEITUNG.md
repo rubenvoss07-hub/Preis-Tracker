@@ -86,29 +86,36 @@ node scripts/add-week.mjs 2026-07-01 --real
 
 Danach in `data/prices.json` die gefundenen Preise eintragen (statt `null`) und committen.
 
-## 5. Die wöchentliche Automatik
+## 5. Die wöchentliche Automatik (Claude-Routine)
 
-Die Preise aktualisiert ein **GitHub-Action-Job einmal pro Woche** automatisch:
-`.github/workflows/weekly-price-update.yml`. Er läuft jeden Montagmorgen (und lässt
-sich jederzeit von Hand starten unter **Actions → „Weekly price update" → Run workflow**).
+Die Preise aktualisiert eine **Claude-Code-Routine** einmal pro Woche automatisch.
+Eine Routine ist ein gespeicherter Prompt, der nach Zeitplan in einer Cloud-Umgebung
+von Anthropic läuft – ganz ohne deinen Rechner und **ohne API-Key** (läuft über dein
+Claude-Abo). Sie macht genau das, was wir hier von Hand gemacht haben: Preise
+recherchieren, in `data/prices.json` eintragen, auf `main` pushen → die Seite
+aktualisiert sich.
 
-Ablauf des Jobs:
+Der fertige Prompt liegt in **[ROUTINE-PROMPT.md](ROUTINE-PROMPT.md)**.
 
-1. legt mit `scripts/add-week.mjs --real` einen neuen, leeren Snapshot für die Woche an,
-2. startet Claude headless mit den Anweisungen aus `.github/price-update-prompt.md`,
-3. Claude recherchiert je Produkt × Markt den aktuellen Preis (echte Online-Shops der
-   Ketten) und trägt ihn ein – nicht Auffindbares bleibt `null`, **nichts wird geraten**,
-4. committet `data/prices.json` auf `main` → GitHub Pages veröffentlicht die Seite neu.
+### Einrichtung (einmalig, ~3 Minuten)
 
-### Einmalige Einrichtung (nötig, sonst überspringt der Job sich selbst)
+1. Gehe zu **<https://claude.ai/code/routines>** und klicke **New routine**
+   (oder im CLI: `/schedule weekly Münster price update`).
+2. **Name** z. B. „Preis-Tracker Münster – wöchentlich".
+3. **Prompt/Instructions:** den Inhalt von `ROUTINE-PROMPT.md` einfügen.
+4. **Repository:** `rubenvoss07-hub/Preis-Tracker` auswählen.
+5. **Environment / Network access:** auf **Full** stellen (oder **Custom** mit den
+   Domains der Ketten und Preisportale). Die Standard-Einstellung „Trusted" **blockt**
+   die Supermarkt-Seiten – dann findet die Routine keine Preise.
+6. **Permissions:** **„Allow unrestricted branch pushes"** für dieses Repo aktivieren,
+   damit die Routine direkt auf `main` pushen darf. (Ohne das pusht sie auf einen
+   `claude/…`-Branch – dann nutze die „Safer variant" am Ende von ROUTINE-PROMPT.md
+   und merge wöchentlich selbst.)
+7. **Trigger:** **Schedule → Weekly** wählen, Tag/Uhrzeit nach Wunsch.
+8. **Create.** Mit **Run now** lässt sich der erste Lauf sofort testen.
 
-Ein Repository-Secret **`ANTHROPIC_API_KEY`** hinterlegen:
-
-1. API-Key erstellen auf <https://console.anthropic.com>.
-2. Im Repo: **Settings → Secrets and variables → Actions → New repository secret**.
-3. Name: `ANTHROPIC_API_KEY`, Wert: der Key. Speichern.
-
-Ohne dieses Secret läuft der Job ohne Fehler durch und tut einfach nichts.
+> Sicherheit: Wähle nur dieses eine Repo aus und entferne nicht benötigte Connectors.
+> Die Routine läuft autonom mit Schreibrechten und Web-Zugriff – gib ihr nur, was sie braucht.
 
 ### Manuell eine Woche nachtragen
 
