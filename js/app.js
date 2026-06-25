@@ -95,27 +95,52 @@ function renderBanner() {
 
 function renderBasket() {
   const grid = $("#basketGrid");
-  const totals = state.markets.map((m) => {
-    let sum = 0, count = 0;
-    for (const p of state.products) {
-      const v = state.latest.prices?.[p.id]?.[m.id];
-      if (typeof v === "number") { sum += v; count++; }
-    }
-    return { market: m, sum, count };
-  }).filter((t) => t.count > 0).sort((a, b) => a.sum - b.sum);
+  const sub = $("#basketSub");
+  const priceOf = (pId, mId) => {
+    const v = state.latest.prices?.[pId]?.[mId];
+    return typeof v === "number" ? v : null;
+  };
 
-  const maxCount = Math.max(...totals.map((t) => t.count), 1);
+  // Only markets that have at least one price take part.
+  const active = state.markets.filter((m) => state.products.some((p) => priceOf(p.id, m.id) !== null));
+
+  // Fair comparison: the "common basket" = products priced at EVERY active market.
+  const common = state.products.filter((p) => active.length > 0 && active.every((m) => priceOf(p.id, m.id) !== null));
+
+  if (active.length < 2 || common.length < 2) {
+    // Not enough overlapping data to compare fairly — show coverage only.
+    sub.textContent = "Sobald genug Preise vorliegen, erscheint hier der Marktvergleich.";
+    grid.innerHTML = active.map((m) => {
+      const count = state.products.filter((p) => priceOf(p.id, m.id) !== null).length;
+      return `<div class="basket-card">
+        <span class="accent-bar" style="background:${m.color}"></span>
+        <div class="basket-name">${escapeHtml(m.name)}</div>
+        <div class="basket-branch">${escapeHtml(m.branch || "")}</div>
+        <div class="basket-meta">${count} von ${state.products.length} Produkten gelistet</div>
+      </div>`;
+    }).join("");
+    return;
+  }
+
+  sub.textContent = `Korb aus ${common.length} Produkten, die es in allen ${active.length} Märkten gibt — fairer Direktvergleich.`;
+
+  const totals = active.map((m) => {
+    let sum = 0;
+    for (const p of common) sum += priceOf(p.id, m.id);
+    const listed = state.products.filter((p) => priceOf(p.id, m.id) !== null).length;
+    return { market: m, sum, listed };
+  }).sort((a, b) => a.sum - b.sum);
 
   grid.innerHTML = totals.map((t, i) => `
     <div class="basket-card${i === 0 ? " winner" : ""}">
       <span class="accent-bar" style="background:${t.market.color}"></span>
-      <div class="basket-rank">#${i + 1}${i === 0 ? " · Günstigster" : ""}</div>
+      <div class="basket-rank">#${i + 1}${i === 0 ? " · Günstigster Korb" : ""}</div>
       <div class="basket-name">${escapeHtml(t.market.name)}
         ${i === 0 ? '<span class="winner-badge">★ Top</span>' : ""}
       </div>
       <div class="basket-branch">${escapeHtml(t.market.branch || "")}</div>
       <div class="basket-total">${euro(t.sum)}<span class="cur"> €</span></div>
-      <div class="basket-meta">${t.count} von ${state.products.length} Produkten${t.count < maxCount ? " verfügbar" : ""}</div>
+      <div class="basket-meta">Vergleichskorb · ${t.listed}/${state.products.length} Produkte gelistet</div>
     </div>
   `).join("");
 }

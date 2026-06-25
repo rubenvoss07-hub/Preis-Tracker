@@ -1,567 +1,194 @@
 {
   "currency": "EUR",
   "city": "Münster",
-  "lastUpdated": "2026-06-24",
-  "sample": true,
+  "lastUpdated": "2026-06-25",
+  "sample": false,
+  "source": "Recherche über die Online-Shops/Angebote der Ketten und deutsche Preisportale; Stand 2026-06-25. Werte ohne Gewähr.",
   "snapshots": [
     {
-      "date": "2026-06-10",
+      "date": "2026-06-25",
       "prices": {
         "frosta": {
-          "rewe-metzer": 3.41,
+          "rewe-metzer": 2.99,
+          "lidl": 4.79,
+          "ecenter-ebert": 4.79,
+          "aldi-nord": 3.59,
+          "sb-markt": null
+        },
+        "pizza-oetker": {
+          "rewe-metzer": 3.69,
+          "lidl": 2.49,
+          "ecenter-ebert": 3.69,
+          "aldi-nord": 3.69,
+          "sb-markt": null
+        },
+        "mccain-longs": {
+          "rewe-metzer": 2.99,
           "lidl": 3.49,
-          "ecenter-ebert": 3.93,
-          "aldi-nord": 2.82,
-          "sb-markt": 3.44
-        },
-        "pizza-oetker": {
-          "rewe-metzer": 2.96,
-          "lidl": 2.87,
-          "ecenter-ebert": 3.24,
-          "aldi-nord": 2.49,
-          "sb-markt": 3
-        },
-        "mccain-longs": {
-          "rewe-metzer": 3.21,
-          "lidl": 2.68,
-          "ecenter-ebert": 2.75,
-          "aldi-nord": 2.74,
-          "sb-markt": 2.99
+          "ecenter-ebert": 5.49,
+          "aldi-nord": 4.89,
+          "sb-markt": null
         },
         "iglo-nuggets": {
-          "rewe-metzer": 3.87,
-          "lidl": 3.28,
-          "ecenter-ebert": 3.45,
-          "aldi-nord": 3.49,
-          "sb-markt": 3.57
+          "rewe-metzer": 3.29,
+          "lidl": 1.99,
+          "ecenter-ebert": 3.29,
+          "aldi-nord": 3.29,
+          "sb-markt": null
         },
         "lachs-blaetter": {
-          "rewe-metzer": 4.29,
-          "lidl": 3.73,
-          "ecenter-ebert": 4.24,
-          "aldi-nord": 3.71,
+          "rewe-metzer": null,
+          "lidl": 9.99,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
           "sb-markt": null
         },
         "magnum": {
-          "rewe-metzer": 3.08,
-          "lidl": 2.92,
-          "ecenter-ebert": 3.23,
-          "aldi-nord": 2.59,
-          "sb-markt": 3.07
-        },
-        "jever-fun": {
-          "rewe-metzer": 5.42,
-          "lidl": 4.59,
-          "ecenter-ebert": 5.8,
-          "aldi-nord": null,
-          "sb-markt": 4.89
-        },
-        "jever-blutorange": {
-          "rewe-metzer": 5.01,
-          "lidl": null,
-          "ecenter-ebert": 5.19,
-          "aldi-nord": null,
-          "sb-markt": 5.23
-        },
-        "salvus-zitrone": {
-          "rewe-metzer": 6.66,
-          "lidl": null,
-          "ecenter-ebert": 6.78,
-          "aldi-nord": 5.73,
-          "sb-markt": 6.52
-        },
-        "salvus-lemon": {
-          "rewe-metzer": 5.98,
-          "lidl": null,
-          "ecenter-ebert": 6.36,
-          "aldi-nord": 5.08,
-          "sb-markt": 6
-        },
-        "coca-cola": {
-          "rewe-metzer": 1.99,
-          "lidl": 1.9,
-          "ecenter-ebert": 2.25,
-          "aldi-nord": 1.68,
-          "sb-markt": 1.88
-        },
-        "fanta-sprite": {
-          "rewe-metzer": 1.86,
-          "lidl": 1.78,
-          "ecenter-ebert": 2.02,
-          "aldi-nord": 1.68,
-          "sb-markt": 1.8
-        },
-        "elephant-bay": {
-          "rewe-metzer": 1.52,
-          "lidl": 1.21,
-          "ecenter-ebert": 1.37,
-          "aldi-nord": 1.06,
-          "sb-markt": 1.19
-        },
-        "monster-doctor": {
-          "rewe-metzer": 1.43,
-          "lidl": 1.39,
-          "ecenter-ebert": 1.48,
-          "aldi-nord": null,
-          "sb-markt": 1.44
-        },
-        "sylter-caesars": {
-          "rewe-metzer": 1.98,
-          "lidl": 2.03,
-          "ecenter-ebert": 2.06,
-          "aldi-nord": null,
-          "sb-markt": 1.85
-        },
-        "damhus-wuerstchen": {
-          "rewe-metzer": 2.36,
-          "lidl": 2.05,
-          "ecenter-ebert": 2.35,
-          "aldi-nord": 1.94,
-          "sb-markt": 2.43
-        },
-        "weihen-kochsahne": {
-          "rewe-metzer": 1.03,
-          "lidl": 0.89,
-          "ecenter-ebert": 1,
-          "aldi-nord": 0.83,
-          "sb-markt": 0.96
-        },
-        "weihen-fruchtquark": {
-          "rewe-metzer": 1.21,
-          "lidl": 1.13,
-          "ecenter-ebert": 1.23,
-          "aldi-nord": 1.06,
-          "sb-markt": 1.28
-        },
-        "lavazza-cremoso": {
-          "rewe-metzer": 13.95,
-          "lidl": null,
-          "ecenter-ebert": 14.18,
-          "aldi-nord": 13.69,
-          "sb-markt": 14.52
-        },
-        "barilla-nudeln": {
-          "rewe-metzer": 1.87,
-          "lidl": 1.78,
-          "ecenter-ebert": 1.84,
-          "aldi-nord": 1.6,
-          "sb-markt": 1.67
-        },
-        "nutella": {
-          "rewe-metzer": 3.31,
-          "lidl": 3.22,
-          "ecenter-ebert": 3.6,
-          "aldi-nord": 2.95,
-          "sb-markt": 3.41
-        },
-        "avocado": {
-          "rewe-metzer": 1.28,
-          "lidl": 1.04,
-          "ecenter-ebert": 1.21,
-          "aldi-nord": 1.09,
-          "sb-markt": 1.12
-        },
-        "develey": {
-          "rewe-metzer": 1.48,
-          "lidl": 1.36,
-          "ecenter-ebert": 1.51,
-          "aldi-nord": null,
-          "sb-markt": 1.43
-        },
-        "remia": {
-          "rewe-metzer": 2.09,
-          "lidl": 1.84,
-          "ecenter-ebert": 2.1,
-          "aldi-nord": null,
-          "sb-markt": 1.75
-        },
-        "lukull-hollandaise": {
-          "rewe-metzer": 1,
-          "lidl": 0.79,
-          "ecenter-ebert": 0.84,
-          "aldi-nord": 0.83,
-          "sb-markt": 0.82
-        },
-        "maredo-rind": {
-          "rewe-metzer": 6.85,
-          "lidl": null,
-          "ecenter-ebert": 7.33,
-          "aldi-nord": 6.14,
-          "sb-markt": 5.99
-        }
-      }
-    },
-    {
-      "date": "2026-06-17",
-      "prices": {
-        "frosta": {
-          "rewe-metzer": 3.7,
-          "lidl": 3.45,
-          "ecenter-ebert": 3.63,
-          "aldi-nord": 3.2,
-          "sb-markt": 3.25
-        },
-        "pizza-oetker": {
-          "rewe-metzer": 2.86,
-          "lidl": 2.95,
-          "ecenter-ebert": 3.04,
-          "aldi-nord": 2.64,
-          "sb-markt": 2.88
-        },
-        "mccain-longs": {
-          "rewe-metzer": 3.2,
-          "lidl": 2.56,
-          "ecenter-ebert": 2.72,
-          "aldi-nord": 2.55,
-          "sb-markt": 2.85
-        },
-        "iglo-nuggets": {
-          "rewe-metzer": 4.17,
-          "lidl": 3.25,
-          "ecenter-ebert": 3.46,
-          "aldi-nord": 3.51,
-          "sb-markt": 3.74
-        },
-        "lachs-blaetter": {
-          "rewe-metzer": 4.4,
-          "lidl": 3.68,
-          "ecenter-ebert": 4.28,
-          "aldi-nord": 3.34,
+          "rewe-metzer": null,
+          "lidl": 3.49,
+          "ecenter-ebert": 3.99,
+          "aldi-nord": 5.49,
           "sb-markt": null
         },
-        "magnum": {
-          "rewe-metzer": 2.87,
-          "lidl": 2.79,
-          "ecenter-ebert": 3.14,
-          "aldi-nord": 2.8,
-          "sb-markt": 2.91
-        },
         "jever-fun": {
-          "rewe-metzer": 5.41,
-          "lidl": 5.16,
-          "ecenter-ebert": 5.32,
-          "aldi-nord": null,
-          "sb-markt": 4.98
-        },
-        "jever-blutorange": {
-          "rewe-metzer": 5.32,
+          "rewe-metzer": 4.99,
           "lidl": null,
-          "ecenter-ebert": 4.85,
+          "ecenter-ebert": 4.99,
           "aldi-nord": null,
-          "sb-markt": 5.5
-        },
-        "salvus-zitrone": {
-          "rewe-metzer": 6.34,
-          "lidl": null,
-          "ecenter-ebert": 6.66,
-          "aldi-nord": 5.31,
-          "sb-markt": 6.29
-        },
-        "salvus-lemon": {
-          "rewe-metzer": 5.83,
-          "lidl": null,
-          "ecenter-ebert": 6.36,
-          "aldi-nord": 4.95,
-          "sb-markt": 5.87
-        },
-        "coca-cola": {
-          "rewe-metzer": 2.13,
-          "lidl": 2,
-          "ecenter-ebert": 2.13,
-          "aldi-nord": 1.66,
-          "sb-markt": 1.8
-        },
-        "fanta-sprite": {
-          "rewe-metzer": 1.97,
-          "lidl": 1.72,
-          "ecenter-ebert": 2.02,
-          "aldi-nord": 1.7,
-          "sb-markt": 1.75
-        },
-        "elephant-bay": {
-          "rewe-metzer": 1.52,
-          "lidl": 1.13,
-          "ecenter-ebert": 1.45,
-          "aldi-nord": 1.06,
-          "sb-markt": 1.21
-        },
-        "monster-doctor": {
-          "rewe-metzer": 1.51,
-          "lidl": 1.48,
-          "ecenter-ebert": 1.41,
-          "aldi-nord": null,
-          "sb-markt": 1.48
-        },
-        "sylter-caesars": {
-          "rewe-metzer": 2.08,
-          "lidl": 1.95,
-          "ecenter-ebert": 1.97,
-          "aldi-nord": null,
-          "sb-markt": 1.81
-        },
-        "damhus-wuerstchen": {
-          "rewe-metzer": 2.27,
-          "lidl": 1.88,
-          "ecenter-ebert": 2.25,
-          "aldi-nord": 2,
-          "sb-markt": 2.34
-        },
-        "weihen-kochsahne": {
-          "rewe-metzer": 0.96,
-          "lidl": 0.94,
-          "ecenter-ebert": 1.05,
-          "aldi-nord": 0.85,
-          "sb-markt": 0.85
-        },
-        "weihen-fruchtquark": {
-          "rewe-metzer": 1.15,
-          "lidl": 1.06,
-          "ecenter-ebert": 1.21,
-          "aldi-nord": 0.98,
-          "sb-markt": 1.32
-        },
-        "lavazza-cremoso": {
-          "rewe-metzer": 13.8,
-          "lidl": null,
-          "ecenter-ebert": 14.95,
-          "aldi-nord": 12.74,
-          "sb-markt": 14.31
-        },
-        "barilla-nudeln": {
-          "rewe-metzer": 1.88,
-          "lidl": 1.75,
-          "ecenter-ebert": 1.8,
-          "aldi-nord": 1.75,
-          "sb-markt": 1.68
-        },
-        "nutella": {
-          "rewe-metzer": 3.4,
-          "lidl": 3.25,
-          "ecenter-ebert": 3.6,
-          "aldi-nord": 3.02,
-          "sb-markt": 3.48
-        },
-        "avocado": {
-          "rewe-metzer": 1.34,
-          "lidl": 1,
-          "ecenter-ebert": 1.2,
-          "aldi-nord": 1.16,
-          "sb-markt": 1.14
-        },
-        "develey": {
-          "rewe-metzer": 1.38,
-          "lidl": 1.49,
-          "ecenter-ebert": 1.51,
-          "aldi-nord": null,
-          "sb-markt": 1.48
-        },
-        "remia": {
-          "rewe-metzer": 2.06,
-          "lidl": 1.7,
-          "ecenter-ebert": 2.05,
-          "aldi-nord": null,
-          "sb-markt": 1.78
-        },
-        "lukull-hollandaise": {
-          "rewe-metzer": 0.92,
-          "lidl": 0.74,
-          "ecenter-ebert": 0.79,
-          "aldi-nord": 0.81,
-          "sb-markt": 0.79
-        },
-        "maredo-rind": {
-          "rewe-metzer": 6.54,
-          "lidl": null,
-          "ecenter-ebert": 7.57,
-          "aldi-nord": 6.36,
-          "sb-markt": 6.1
-        }
-      }
-    },
-    {
-      "date": "2026-06-24",
-      "prices": {
-        "frosta": {
-          "rewe-metzer": 3.63,
-          "lidl": 3.45,
-          "ecenter-ebert": 3.81,
-          "aldi-nord": 3.04,
-          "sb-markt": 3.19
-        },
-        "pizza-oetker": {
-          "rewe-metzer": 3,
-          "lidl": 2.98,
-          "ecenter-ebert": 3.15,
-          "aldi-nord": 2.56,
-          "sb-markt": 2.82
-        },
-        "mccain-longs": {
-          "rewe-metzer": 3.17,
-          "lidl": 2.57,
-          "ecenter-ebert": 2.83,
-          "aldi-nord": 2.67,
-          "sb-markt": 3.15
-        },
-        "iglo-nuggets": {
-          "rewe-metzer": 3.9,
-          "lidl": 3.31,
-          "ecenter-ebert": 3.72,
-          "aldi-nord": 3.31,
-          "sb-markt": 3.63
-        },
-        "lachs-blaetter": {
-          "rewe-metzer": 4.21,
-          "lidl": 3.97,
-          "ecenter-ebert": 3.94,
-          "aldi-nord": 3.51,
           "sb-markt": null
         },
-        "magnum": {
-          "rewe-metzer": 3.04,
-          "lidl": 3,
-          "ecenter-ebert": 2.96,
-          "aldi-nord": 2.51,
-          "sb-markt": 2.82
-        },
-        "jever-fun": {
-          "rewe-metzer": 5.32,
-          "lidl": 4.69,
-          "ecenter-ebert": 5.57,
-          "aldi-nord": null,
-          "sb-markt": 4.65
-        },
         "jever-blutorange": {
-          "rewe-metzer": 5.51,
+          "rewe-metzer": 4.99,
           "lidl": null,
-          "ecenter-ebert": 4.72,
+          "ecenter-ebert": 4.99,
           "aldi-nord": null,
-          "sb-markt": 5.24
+          "sb-markt": null
         },
         "salvus-zitrone": {
-          "rewe-metzer": 6.63,
+          "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": 6.46,
-          "aldi-nord": 5.28,
-          "sb-markt": 6.09
+          "ecenter-ebert": 3.49,
+          "aldi-nord": null,
+          "sb-markt": null
         },
         "salvus-lemon": {
-          "rewe-metzer": 6.26,
+          "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": 6.28,
-          "aldi-nord": 4.59,
-          "sb-markt": 6.07
+          "ecenter-ebert": 3.49,
+          "aldi-nord": null,
+          "sb-markt": null
         },
         "coca-cola": {
-          "rewe-metzer": 2.08,
-          "lidl": 1.96,
-          "ecenter-ebert": 2.25,
-          "aldi-nord": 1.57,
-          "sb-markt": 1.89
+          "rewe-metzer": 1.59,
+          "lidl": 0.99,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 1.59,
+          "sb-markt": null
         },
         "fanta-sprite": {
-          "rewe-metzer": 1.87,
-          "lidl": 1.84,
-          "ecenter-ebert": 2.06,
-          "aldi-nord": 1.55,
-          "sb-markt": 1.75
+          "rewe-metzer": 1.59,
+          "lidl": 0.99,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 1.59,
+          "sb-markt": null
         },
         "elephant-bay": {
-          "rewe-metzer": 1.39,
-          "lidl": 1.1,
-          "ecenter-ebert": 1.45,
-          "aldi-nord": 1.05,
-          "sb-markt": 1.18
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
         },
         "monster-doctor": {
-          "rewe-metzer": 1.47,
-          "lidl": 1.5,
-          "ecenter-ebert": 1.33,
-          "aldi-nord": null,
-          "sb-markt": 1.48
-        },
-        "sylter-caesars": {
-          "rewe-metzer": 1.94,
-          "lidl": 1.97,
-          "ecenter-ebert": 2.1,
-          "aldi-nord": null,
-          "sb-markt": 1.87
-        },
-        "damhus-wuerstchen": {
-          "rewe-metzer": 2.34,
-          "lidl": 1.85,
-          "ecenter-ebert": 2.36,
-          "aldi-nord": 2.04,
-          "sb-markt": 2.34
-        },
-        "weihen-kochsahne": {
-          "rewe-metzer": 1.02,
-          "lidl": 0.92,
-          "ecenter-ebert": 1,
-          "aldi-nord": 0.83,
-          "sb-markt": 0.85
-        },
-        "weihen-fruchtquark": {
-          "rewe-metzer": 1.26,
-          "lidl": 1.03,
-          "ecenter-ebert": 1.25,
-          "aldi-nord": 0.99,
-          "sb-markt": 1.28
-        },
-        "lavazza-cremoso": {
-          "rewe-metzer": 14.93,
-          "lidl": null,
-          "ecenter-ebert": 13.58,
-          "aldi-nord": 13,
-          "sb-markt": 14.16
-        },
-        "barilla-nudeln": {
-          "rewe-metzer": 2.07,
-          "lidl": 1.81,
-          "ecenter-ebert": 1.86,
-          "aldi-nord": 1.76,
-          "sb-markt": 1.59
-        },
-        "nutella": {
-          "rewe-metzer": 3.39,
-          "lidl": 2.95,
-          "ecenter-ebert": 3.75,
-          "aldi-nord": 3.1,
-          "sb-markt": 3.51
-        },
-        "avocado": {
-          "rewe-metzer": 1.3,
-          "lidl": 0.97,
-          "ecenter-ebert": 1.17,
-          "aldi-nord": 1.12,
-          "sb-markt": 1.12
-        },
-        "develey": {
-          "rewe-metzer": 1.42,
-          "lidl": 1.46,
+          "rewe-metzer": null,
+          "lidl": 1.59,
           "ecenter-ebert": 1.49,
+          "aldi-nord": 1.11,
+          "sb-markt": null
+        },
+        "sylter-caesars": {
+          "rewe-metzer": 2.29,
+          "lidl": null,
+          "ecenter-ebert": 2.75,
           "aldi-nord": null,
-          "sb-markt": 1.38
+          "sb-markt": null
+        },
+        "damhus-wuerstchen": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "weihen-kochsahne": {
+          "rewe-metzer": 1.79,
+          "lidl": 0.69,
+          "ecenter-ebert": 1.69,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "weihen-fruchtquark": {
+          "rewe-metzer": 2.29,
+          "lidl": 2.29,
+          "ecenter-ebert": 2.29,
+          "aldi-nord": 1.69,
+          "sb-markt": null
+        },
+        "lavazza-cremoso": {
+          "rewe-metzer": 17.99,
+          "lidl": 11.49,
+          "ecenter-ebert": 12.99,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "barilla-nudeln": {
+          "rewe-metzer": 1.49,
+          "lidl": 1.49,
+          "ecenter-ebert": 1.99,
+          "aldi-nord": 2.09,
+          "sb-markt": null
+        },
+        "nutella": {
+          "rewe-metzer": 3.79,
+          "lidl": 3.49,
+          "ecenter-ebert": 4.29,
+          "aldi-nord": 3.79,
+          "sb-markt": null
+        },
+        "avocado": {
+          "rewe-metzer": 0.99,
+          "lidl": 0.99,
+          "ecenter-ebert": 1.99,
+          "aldi-nord": 1.11,
+          "sb-markt": null
+        },
+        "develey": {
+          "rewe-metzer": 1.79,
+          "lidl": 1.79,
+          "ecenter-ebert": 1.79,
+          "aldi-nord": null,
+          "sb-markt": null
         },
         "remia": {
-          "rewe-metzer": 2.06,
-          "lidl": 1.87,
-          "ecenter-ebert": 2.17,
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
           "aldi-nord": null,
-          "sb-markt": 1.94
+          "sb-markt": null
         },
         "lukull-hollandaise": {
-          "rewe-metzer": 0.98,
-          "lidl": 0.74,
-          "ecenter-ebert": 0.83,
-          "aldi-nord": 0.82,
-          "sb-markt": 0.82
+          "rewe-metzer": 2.49,
+          "lidl": null,
+          "ecenter-ebert": 1.99,
+          "aldi-nord": 1.79,
+          "sb-markt": null
         },
         "maredo-rind": {
-          "rewe-metzer": 6.27,
+          "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": 7.02,
-          "aldi-nord": 6.4,
-          "sb-markt": 6.06
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
         }
       }
     }
