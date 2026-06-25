@@ -59,13 +59,13 @@ Sobald echte Preise eingetragen sind, wird `"sample"` auf `false` gesetzt und de
 
 ## Wöchentliches Update (automatisch)
 
-Ein GitHub-Action-Job (`.github/workflows/weekly-price-update.yml`) aktualisiert die
-Preise **einmal pro Woche automatisch**: er recherchiert per Claude die aktuellen
-Preise je Produkt × Markt, schreibt sie in `data/prices.json` und committet auf `main`.
+Eine **Claude-Code-Routine** aktualisiert die Preise **einmal pro Woche automatisch**:
+sie recherchiert je Produkt × Markt die aktuellen Preise, schreibt sie in
+`data/prices.json` und pusht auf `main` (→ die Seite aktualisiert sich). Die Routine läuft
+in Anthropics Cloud – ohne deinen Rechner und ohne API-Key (über dein Claude-Abo).
 
-Dafür ist einmalig ein Repository-Secret **`ANTHROPIC_API_KEY`** nötig
-(Settings → Secrets and variables → Actions). Ohne das Secret überspringt der Job
-sich selbst, ohne Fehler. Details und das Datenformat: **[ANLEITUNG.md](ANLEITUNG.md)**.
+Der fertige Prompt liegt in **[ROUTINE-PROMPT.md](ROUTINE-PROMPT.md)**, die Einrichtung
+(3 Minuten, einmalig) steht in **[ANLEITUNG.md](ANLEITUNG.md)** → „Wöchentliche Automatik".
 
 ## GitHub Pages aktivieren
 
