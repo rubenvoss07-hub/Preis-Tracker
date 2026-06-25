@@ -86,15 +86,35 @@ node scripts/add-week.mjs 2026-07-01 --real
 
 Danach in `data/prices.json` die gefundenen Preise eintragen (statt `null`) und committen.
 
-## 5. Ablauf der späteren Automatik (zur Info)
+## 5. Die wöchentliche Automatik
 
-Die wiederkehrende Aufgabe soll grob so arbeiten:
+Die Preise aktualisiert ein **GitHub-Action-Job einmal pro Woche** automatisch:
+`.github/workflows/weekly-price-update.yml`. Er läuft jeden Montagmorgen (und lässt
+sich jederzeit von Hand starten unter **Actions → „Weekly price update" → Run workflow**).
 
-1. `data/products.json` und `data/markets.json` lesen → was ist zu prüfen?
-2. Für jedes Produkt je Markt den aktuellen Preis in Münster recherchieren.
-3. `node scripts/add-week.mjs <datum> --real` ausführen.
-4. Preise in `data/prices.json` eintragen.
-5. Committen & pushen → GitHub Pages aktualisiert die Seite automatisch.
+Ablauf des Jobs:
 
-> Die Automatik wird später eingerichtet – erst prüfen wir mit den Beispieldaten,
-> ob die Seite so gefällt.
+1. legt mit `scripts/add-week.mjs --real` einen neuen, leeren Snapshot für die Woche an,
+2. startet Claude headless mit den Anweisungen aus `.github/price-update-prompt.md`,
+3. Claude recherchiert je Produkt × Markt den aktuellen Preis (echte Online-Shops der
+   Ketten) und trägt ihn ein – nicht Auffindbares bleibt `null`, **nichts wird geraten**,
+4. committet `data/prices.json` auf `main` → GitHub Pages veröffentlicht die Seite neu.
+
+### Einmalige Einrichtung (nötig, sonst überspringt der Job sich selbst)
+
+Ein Repository-Secret **`ANTHROPIC_API_KEY`** hinterlegen:
+
+1. API-Key erstellen auf <https://console.anthropic.com>.
+2. Im Repo: **Settings → Secrets and variables → Actions → New repository secret**.
+3. Name: `ANTHROPIC_API_KEY`, Wert: der Key. Speichern.
+
+Ohne dieses Secret läuft der Job ohne Fehler durch und tut einfach nichts.
+
+### Manuell eine Woche nachtragen
+
+Geht weiterhin jederzeit von Hand (ohne Automatik):
+
+```bash
+node scripts/add-week.mjs 2026-07-01 --real   # leeren Snapshot anlegen
+# Preise in data/prices.json eintragen, dann committen & pushen
+```
