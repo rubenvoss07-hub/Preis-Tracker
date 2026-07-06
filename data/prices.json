@@ -3,7 +3,7 @@
   "city": "Münster",
   "lastUpdated": "2026-07-06",
   "sample": false,
-  "source": "Recherche über die Online-Shops/Angebote der Ketten und deutsche Preisportale; Stand 2026-06-29. Werte ohne Gewähr.",
+  "source": "Recherche über die Online-Shops/Angebote der Ketten und deutsche Preisportale; Stand 2026-07-06. Werte ohne Gewähr. Hinweis: Wegen einer Störung der Recherche-Infrastruktur konnten diese Woche nur wenige Preise (v.a. E-Center, teilweise Lidl) verifiziert werden; Rewe und Aldi Nord bleiben unbestätigt (null) statt geraten.",
   "snapshots": [
     {
       "date": "2026-06-25",
@@ -385,7 +385,7 @@
         "frosta": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 4.79,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -399,7 +399,7 @@
         "mccain-longs": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 5.49,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -427,7 +427,7 @@
         "jever-fun": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 4.79,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -455,14 +455,14 @@
         "coca-cola": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 1.59,
           "aldi-nord": null,
           "sb-markt": null
         },
         "fanta-sprite": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 1.59,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -476,14 +476,14 @@
         "monster-doctor": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 1.59,
           "aldi-nord": null,
           "sb-markt": null
         },
         "sylter-caesars": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 2.75,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -497,35 +497,35 @@
         "weihen-kochsahne": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 1.69,
           "aldi-nord": null,
           "sb-markt": null
         },
         "weihen-fruchtquark": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 2.99,
           "aldi-nord": null,
           "sb-markt": null
         },
         "lavazza-cremoso": {
           "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "lidl": 19.99,
+          "ecenter-ebert": 14.99,
           "aldi-nord": null,
           "sb-markt": null
         },
         "barilla-nudeln": {
           "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "lidl": 0.89,
+          "ecenter-ebert": 2.19,
           "aldi-nord": null,
           "sb-markt": null
         },
         "nutella": {
           "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "lidl": 3.79,
+          "ecenter-ebert": 4.29,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -538,8 +538,8 @@
         },
         "develey": {
           "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "lidl": 1.79,
+          "ecenter-ebert": 1.49,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -553,7 +553,7 @@
         "lukull-hollandaise": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 2.49,
           "aldi-nord": null,
           "sb-markt": null
         },
