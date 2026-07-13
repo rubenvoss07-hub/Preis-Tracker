@@ -1,7 +1,7 @@
 {
   "currency": "EUR",
   "city": "Münster",
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-13",
   "sample": false,
   "source": "Recherche über die Online-Shops/Angebote der Ketten und deutsche Preisportale; Stand 2026-07-06. Werte ohne Gewähr. Hinweis: Wegen einer Störung der Recherche-Infrastruktur konnten diese Woche nur wenige Preise (v.a. E-Center, teilweise Lidl) verifiziert werden; Rewe und Aldi Nord bleiben unbestätigt (null) statt geraten.",
   "snapshots": [
@@ -554,6 +554,193 @@
           "rewe-metzer": null,
           "lidl": null,
           "ecenter-ebert": 2.49,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "maredo-rind": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        }
+      }
+    },
+    {
+      "date": "2026-07-13",
+      "prices": {
+        "frosta": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "pizza-oetker": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "mccain-longs": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "iglo-nuggets": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "lachs-blaetter": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "magnum": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "jever-fun": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "jever-blutorange": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "salvus-zitrone": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "salvus-lemon": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "coca-cola": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "fanta-sprite": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "elephant-bay": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "monster-doctor": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "sylter-caesars": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "damhus-wuerstchen": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "weihen-kochsahne": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "weihen-fruchtquark": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "lavazza-cremoso": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "barilla-nudeln": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "nutella": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "avocado": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "develey": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "remia": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "lukull-hollandaise": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
           "aldi-nord": null,
           "sb-markt": null
         },
