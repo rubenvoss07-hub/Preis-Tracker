@@ -1,7 +1,7 @@
 {
   "currency": "EUR",
   "city": "Münster",
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-08-10",
   "sample": false,
   "source": "Recherche über die Online-Shops der Ketten (shop.rewe.de war per WAF blockiert, daher überwiegend sekundäre Portale; lidl.de, edeka24.de, aldi-nord.de teils direkt) sowie deutsche Preisportale (supermarktcheck.de, aktionspreis.de, marktguru.de, wogibtswas.de); Stand 2026-08-03. Werte ohne Gewähr. SB Markt ist ein kleiner unabhängiger Laden ohne Online-Präsenz, daher komplett null (kein 'SB-Zentralmarkt', das ist ein separater C&C-Großhandel). Coca-Cola/Fanta bei Rewe zu 1,11€ ist eine befristete Aktion (bis 08.08.2026), regulär 1,59€. Einzelne Positionen blieben null, weil die Kette das Markenprodukt nicht führt (z. B. Aldi Nord führt Lavazza nur als 'Crema e Aroma', nicht 'Espresso Cremoso'; Jever/Salvus/Damhus/Remia/Maredo fehlen bei mehreren Discountern) oder die Variante/Packungsgröße nicht sicher zugeordnet werden konnte (z. B. Magnum-Mehrpackungen in stark abweichenden Größen).",
   "snapshots": [
@@ -1116,6 +1116,193 @@
           "lidl": null,
           "ecenter-ebert": 2.49,
           "aldi-nord": 2.69,
+          "sb-markt": null
+        },
+        "maredo-rind": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        }
+      }
+    },
+    {
+      "date": "2026-08-10",
+      "prices": {
+        "frosta": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "pizza-oetker": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "mccain-longs": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "iglo-nuggets": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "lachs-blaetter": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "magnum": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "jever-fun": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "jever-blutorange": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "salvus-zitrone": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "salvus-lemon": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "coca-cola": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "fanta-sprite": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "elephant-bay": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "monster-doctor": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "sylter-caesars": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "damhus-wuerstchen": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "weihen-kochsahne": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "weihen-fruchtquark": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "lavazza-cremoso": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "barilla-nudeln": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "nutella": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "avocado": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "develey": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "remia": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
+          "sb-markt": null
+        },
+        "lukull-hollandaise": {
+          "rewe-metzer": null,
+          "lidl": null,
+          "ecenter-ebert": null,
+          "aldi-nord": null,
           "sb-markt": null
         },
         "maredo-rind": {
