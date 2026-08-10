@@ -3,7 +3,7 @@
   "city": "Münster",
   "lastUpdated": "2026-08-10",
   "sample": false,
-  "source": "Recherche über die Online-Shops der Ketten (shop.rewe.de war per WAF blockiert, daher überwiegend sekundäre Portale; lidl.de, edeka24.de, aldi-nord.de teils direkt) sowie deutsche Preisportale (supermarktcheck.de, aktionspreis.de, marktguru.de, wogibtswas.de); Stand 2026-08-03. Werte ohne Gewähr. SB Markt ist ein kleiner unabhängiger Laden ohne Online-Präsenz, daher komplett null (kein 'SB-Zentralmarkt', das ist ein separater C&C-Großhandel). Coca-Cola/Fanta bei Rewe zu 1,11€ ist eine befristete Aktion (bis 08.08.2026), regulär 1,59€. Einzelne Positionen blieben null, weil die Kette das Markenprodukt nicht führt (z. B. Aldi Nord führt Lavazza nur als 'Crema e Aroma', nicht 'Espresso Cremoso'; Jever/Salvus/Damhus/Remia/Maredo fehlen bei mehreren Discountern) oder die Variante/Packungsgröße nicht sicher zugeordnet werden konnte (z. B. Magnum-Mehrpackungen in stark abweichenden Größen).",
+  "source": "Recherche über die Online-Shops der Ketten (shop.rewe.de per WAF/Bot-Schutz blockiert, daher überwiegend sekundäre Portale wie supermarktcheck.de/aktionspreis.de; lidl.de teils nicht scrapbar wg. JS-SPA, ebenfalls sekundäre Portale; edeka24.de/edeka.de und aldi-nord.de teils direkt) sowie deutsche Preisportale (supermarktcheck.de, aktionspreis.de, marktguru.de, wogibtswas.de); Stand 2026-08-10. Werte ohne Gewähr. SB Markt ist ein kleiner unabhängiger Laden ohne Online-Präsenz, daher komplett null. Aktive Wochenangebote diese Woche: Coca-Cola/Fanta bei Aldi Nord 0,99€ (regulär 1,59€, bis 15.08.), Monster bei Aldi Nord 0,78€ (regulär 1,49€, bis 15.08.), Frosta bei Lidl 2,99€ (regulär 4,79€, bis 15.08.), Barilla bei Lidl 0,99€ (regulär 1,99€, bis 15.08.), Weihenstephan Fruchtquark bei Rewe 1,79€ (regulär ca. 2,29–2,39€, bis 16.08.). Magnum wurde diese Woche überall auf null gesetzt, da die Packungsgrößen/Preise zwischen den Quellen zu stark voneinander abwichen, um sie sicher zuzuordnen. 'Sylter Salatfrische Caesars' bei Rewe ebenfalls null, da das dort gefundene Produkt tatsächlich unter der Marke 'Zum Dorfkrug' läuft, nicht 'Sylter'. Elephant Bay bei E-Center null, da dort nur 0,33-l-Dosen gefunden wurden, keine 1-l-Flasche. Weihenstephan Kochsahne wird bei allen Ketten teils in 250g/325g statt 200g verkauft (Preis bezieht sich auf die tatsächlich verkaufte Packungsgröße). Andere Positionen blieben null, weil die Kette das Markenprodukt nicht führt (z. B. Aldi Nord führt Lavazza nur als eigene 'Barissimo Espresso Cremoso', nicht als Lavazza; Jever/Salvus/Damhus/Remia/Maredo fehlen bei mehreren Ketten) oder kein aktueller Preis sicher bestätigt werden konnte.",
   "snapshots": [
     {
       "date": "2026-06-25",
@@ -1131,37 +1131,37 @@
       "date": "2026-08-10",
       "prices": {
         "frosta": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 4.79,
+          "lidl": 2.99,
+          "ecenter-ebert": 4.79,
+          "aldi-nord": 4.79,
           "sb-markt": null
         },
         "pizza-oetker": {
-          "rewe-metzer": null,
-          "lidl": null,
+          "rewe-metzer": 3.69,
+          "lidl": 3.69,
           "ecenter-ebert": null,
-          "aldi-nord": null,
+          "aldi-nord": 3.69,
           "sb-markt": null
         },
         "mccain-longs": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 4.89,
+          "lidl": 4.89,
+          "ecenter-ebert": 5.49,
+          "aldi-nord": 2.99,
           "sb-markt": null
         },
         "iglo-nuggets": {
-          "rewe-metzer": null,
+          "rewe-metzer": 2.69,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 2.79,
+          "aldi-nord": 3.29,
           "sb-markt": null
         },
         "lachs-blaetter": {
-          "rewe-metzer": null,
+          "rewe-metzer": 3.99,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 2.99,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -1173,14 +1173,14 @@
           "sb-markt": null
         },
         "jever-fun": {
-          "rewe-metzer": null,
+          "rewe-metzer": 4.99,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 4.79,
           "aldi-nord": null,
           "sb-markt": null
         },
         "jever-blutorange": {
-          "rewe-metzer": null,
+          "rewe-metzer": 4.99,
           "lidl": null,
           "ecenter-ebert": null,
           "aldi-nord": null,
@@ -1201,17 +1201,17 @@
           "sb-markt": null
         },
         "coca-cola": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.59,
+          "lidl": 1.59,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 0.99,
           "sb-markt": null
         },
         "fanta-sprite": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.59,
+          "lidl": 1.59,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 0.99,
           "sb-markt": null
         },
         "elephant-bay": {
@@ -1222,10 +1222,10 @@
           "sb-markt": null
         },
         "monster-doctor": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.49,
+          "lidl": 1.49,
+          "ecenter-ebert": 1.49,
+          "aldi-nord": 0.78,
           "sb-markt": null
         },
         "sylter-caesars": {
@@ -1243,51 +1243,51 @@
           "sb-markt": null
         },
         "weihen-kochsahne": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "rewe-metzer": 1.79,
+          "lidl": 0.69,
+          "ecenter-ebert": 1.69,
           "aldi-nord": null,
           "sb-markt": null
         },
         "weihen-fruchtquark": {
-          "rewe-metzer": null,
-          "lidl": null,
+          "rewe-metzer": 1.79,
+          "lidl": 2.39,
           "ecenter-ebert": null,
-          "aldi-nord": null,
+          "aldi-nord": 2.39,
           "sb-markt": null
         },
         "lavazza-cremoso": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "rewe-metzer": 17.99,
+          "lidl": 15.99,
+          "ecenter-ebert": 15.99,
           "aldi-nord": null,
           "sb-markt": null
         },
         "barilla-nudeln": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.99,
+          "lidl": 0.99,
+          "ecenter-ebert": 2.51,
+          "aldi-nord": 1.99,
           "sb-markt": null
         },
         "nutella": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 3.99,
+          "lidl": 3.99,
+          "ecenter-ebert": 3.79,
+          "aldi-nord": 3.99,
           "sb-markt": null
         },
         "avocado": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.69,
+          "lidl": 1.25,
+          "ecenter-ebert": 1.99,
+          "aldi-nord": 0.99,
           "sb-markt": null
         },
         "develey": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "rewe-metzer": 1.79,
+          "lidl": 1.39,
+          "ecenter-ebert": 1.59,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -1299,10 +1299,10 @@
           "sb-markt": null
         },
         "lukull-hollandaise": {
-          "rewe-metzer": null,
+          "rewe-metzer": 2.49,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 2.49,
+          "aldi-nord": 2.69,
           "sb-markt": null
         },
         "maredo-rind": {
