@@ -1131,56 +1131,56 @@
       "date": "2026-09-14",
       "prices": {
         "frosta": {
-          "rewe-metzer": null,
+          "rewe-metzer": 4.79,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 4.79,
+          "aldi-nord": 2.49,
           "sb-markt": null
         },
         "pizza-oetker": {
-          "rewe-metzer": null,
+          "rewe-metzer": 3.69,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 3.69,
+          "aldi-nord": 3.69,
           "sb-markt": null
         },
         "mccain-longs": {
-          "rewe-metzer": null,
+          "rewe-metzer": 4.89,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 4.89,
+          "aldi-nord": 1.99,
           "sb-markt": null
         },
         "iglo-nuggets": {
-          "rewe-metzer": null,
+          "rewe-metzer": 3.99,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 3.29,
           "aldi-nord": null,
           "sb-markt": null
         },
         "lachs-blaetter": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 3.49,
           "aldi-nord": null,
           "sb-markt": null
         },
         "magnum": {
-          "rewe-metzer": null,
+          "rewe-metzer": 5.49,
           "lidl": null,
           "ecenter-ebert": null,
-          "aldi-nord": null,
+          "aldi-nord": 5.49,
           "sb-markt": null
         },
         "jever-fun": {
-          "rewe-metzer": null,
+          "rewe-metzer": 4.99,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 5.49,
+          "aldi-nord": 5.49,
           "sb-markt": null
         },
         "jever-blutorange": {
-          "rewe-metzer": null,
+          "rewe-metzer": 4.99,
           "lidl": null,
           "ecenter-ebert": null,
           "aldi-nord": null,
@@ -1201,17 +1201,17 @@
           "sb-markt": null
         },
         "coca-cola": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.59,
+          "lidl": 1.59,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 1.59,
           "sb-markt": null
         },
         "fanta-sprite": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "rewe-metzer": 1.59,
+          "lidl": 1.59,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 1.59,
           "sb-markt": null
         },
         "elephant-bay": {
@@ -1222,16 +1222,16 @@
           "sb-markt": null
         },
         "monster-doctor": {
-          "rewe-metzer": null,
+          "rewe-metzer": 1.49,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 1.59,
+          "aldi-nord": 1.49,
           "sb-markt": null
         },
         "sylter-caesars": {
           "rewe-metzer": null,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 3.11,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -1243,51 +1243,51 @@
           "sb-markt": null
         },
         "weihen-kochsahne": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "rewe-metzer": 1.79,
+          "lidl": 0.69,
+          "ecenter-ebert": 1.69,
           "aldi-nord": null,
           "sb-markt": null
         },
         "weihen-fruchtquark": {
-          "rewe-metzer": null,
+          "rewe-metzer": 2.39,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 2.99,
+          "aldi-nord": 2.39,
           "sb-markt": null
         },
         "lavazza-cremoso": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "rewe-metzer": 17.99,
+          "lidl": 15.99,
+          "ecenter-ebert": 21.99,
           "aldi-nord": null,
           "sb-markt": null
         },
         "barilla-nudeln": {
-          "rewe-metzer": null,
+          "rewe-metzer": 2.49,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 2.19,
+          "aldi-nord": 2.49,
           "sb-markt": null
         },
         "nutella": {
-          "rewe-metzer": null,
+          "rewe-metzer": 3.99,
           "lidl": null,
-          "ecenter-ebert": null,
-          "aldi-nord": null,
+          "ecenter-ebert": 4.29,
+          "aldi-nord": 3.99,
           "sb-markt": null
         },
         "avocado": {
-          "rewe-metzer": null,
+          "rewe-metzer": 0.99,
           "lidl": null,
           "ecenter-ebert": null,
-          "aldi-nord": null,
+          "aldi-nord": 1.79,
           "sb-markt": null
         },
         "develey": {
-          "rewe-metzer": null,
-          "lidl": null,
-          "ecenter-ebert": null,
+          "rewe-metzer": 1.79,
+          "lidl": 1.39,
+          "ecenter-ebert": 1.49,
           "aldi-nord": null,
           "sb-markt": null
         },
@@ -1299,9 +1299,9 @@
           "sb-markt": null
         },
         "lukull-hollandaise": {
-          "rewe-metzer": null,
+          "rewe-metzer": 2.49,
           "lidl": null,
-          "ecenter-ebert": null,
+          "ecenter-ebert": 2.49,
           "aldi-nord": null,
           "sb-markt": null
         },
